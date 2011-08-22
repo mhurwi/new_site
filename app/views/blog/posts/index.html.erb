@@ -2,31 +2,49 @@
 	<div class="inner_main">
 		<div class="container_omega">
 
+<!-- MAIN BLOG POSTS -->
 
-<% content_for :body_content_left do %>
-  <%=raw @page[Page.default_parts.first.to_sym] if Page.default_parts.any? %>
+	<% content_for :body_content_left do %>
+	  <%=raw @page[Page.default_parts.first.to_sym] if Page.default_parts.any? %>
 
-  <% if @blog_posts.any? %>
-    <section id="blog_posts">
-      <%= render :partial => "/blog/shared/post", :collection => @blog_posts %>
-      <%= will_paginate @blog_posts %>
-    </section>
-  <% else %>
-    <p><%= t('.no_blog_articles_yet') %></p>
-  <% end %>
-<% end %>
+	  <% if @blog_posts.any? %>
+
+	    <section id="blog_posts">
+		<div class="post_holder gs_8">
+	      <%= render :partial => "/blog/shared/post", :collection => @blog_posts %>
+	      <%= will_paginate @blog_posts %>
+		</div>
+	    </section>
+	  <% else %>
+	    <p><%= t('.no_blog_articles_yet') %></p>
+	  <% end %>
+	<% end %>
+		
+
+
+
+<!-- RIGHT SIDEBAR -->
 
 <% content_for :body_content_right do %>
   <%=raw @page[Page.default_parts.second.to_sym] if Page.default_parts.many? %>
-
+<div id="blog_sidebar" class="gs_4 omega sidebar">
+	<div class="widget">
+		<h2 class="widgettitle">Categories</h2>
   <%= render :partial => "/blog/shared/categories" %>
+	</div>
+	<div class="widget">
   <%= render :partial => "/blog/shared/tags" %>
+	</div>
+	<div class="widget">
   <%= render :partial => "/blog/shared/rss_feed" %>
+	</div>
   <%= blog_archive_list %>
+</div>
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>
 <% content_for :stylesheets, stylesheet_link_tag('refinerycms-blog') %>
+
 
 
 		</div>

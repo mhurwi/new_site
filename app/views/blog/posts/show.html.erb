@@ -1,3 +1,9 @@
+ <link rel="stylesheet" href="stylesheets/style.css?v=2">
+<div class="main png_bg">
+	<div class="inner_main">
+		<div class="container_omega">
+			
+			
 <% content_for :body_content_left do %>
   <div id="show_blog_post">
     <%= render 'post' %>
@@ -56,6 +62,20 @@
 <% end %>
 
 <%= render :partial => "/shared/content_page", :locals => { :remove_automatic_sections => true }  %>
+
+
+	</div>
+</div>		
+</div>
+
+<!-- /True containers (keep the content inside containers!) -->
+<div class="endmain png_bg"></div>
+<!-- /Main content alpha -->
+
+<!-- Footer styling transition (the stripe). You can remove it if you don't like it -->
+<div class="stripe png_bg"></div>
+<!-- /Footer styling transition -->
+
 
 <% content_for :stylesheets, stylesheet_link_tag('refinerycms-blog') %>
 <% content_for :before_javascript_libraries, jquery_include_tags(:jquery_ui => false) %>

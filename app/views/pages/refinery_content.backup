@@ -1,0 +1,40 @@
+FEATURES PAGE MAIN CONTENT
+
+<div class="gs_8">
+<p><img src="images/logo.png" class="alignleft" />
+Here is a feature of this application, which allows you the power of telepathy.  It also converts water into wine, if you follow some simple insturctions.</p>
+<div class="hr"></div>
+
+<p><img src="images/logo.png" class="alignleft" />
+Here is a feature of this application, which allows you the power of telepathy.  It also converts water into wine, if you follow some simple insturctions.</p>
+<div class="hr"></div>
+</div>
+
+FEATURES PAGE SIDEBAR
+<div class="gs_4 omega sidebar"> 
+				<div class="widget"> 
+					<h2 class="widgettitle">Features</h2> 
+					<ul> 
+						<li><a href="features/payment-experience">Payment Experience</a>
+</li> 
+						<li class="selected"><a href="features/collaboration">Collaboration</a>
+</li> 
+						<li><a href="features/case-studies">Case Studies</a>
+</li> 
+						<li><a href="features/web-based">Web-based App</a>
+</li> 
+						<li><a href="features/accounts">Accounts</a>
+</li> 
+						<li><a href="features/reports">Reports</a>
+</li> 
+						<li><a href="features/comments">Comments</a>
+</li> 
+						<li><a href="features/about">About</a>
+</li> 
+						<li><a href="features/credit">Credit</a>
+</li> 
+						<li><a href="featrures/tools">Tools</a>
+</li>
+					</ul> 
+				</div> 
+			</div>
