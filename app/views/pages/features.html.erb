@@ -1,0 +1,257 @@
+
+
+<style>
+/*
+ * tour page css
+ */
+ 
+		/* tour tabs */
+.tour-tab-header {
+	color:gray;
+	padding-top:20px;
+}
+ 
+#tour-tab-links {
+	list-style: none;
+	padding-top: 20px;
+}
+ 
+#tour-tab-links li {
+	margin-top:10px;
+}
+ 
+#tour-tab-links a {
+	color: #007CBD;
+	text-decoration: none;
+	margin-left: 10px;
+	padding
+ 
+}
+ 
+#tour-tab-links li.active, #tour-tab-links li.active a  {
+	background-color: #4B88CC;
+	line-height:16px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	color: white;
+}
+ 
+ 
+ 
+ 
+		/* tour tab content */
+ 
+#tab_container {
+	border-left: 1px solid #999;
+	min-height: 615px;
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+ 
+#tab-container p {
+	line-height: 140%;
+	color: #4c4c4c;
+	margin: 0 0 1.5em;
+}
+ 
+#tour-saas-features ul li {
+	color:#4c4c4c;
+}
+ 
+#tour-reports li{
+	color:#4c4c4c;
+}
+ 
+.tab_content {
+	padding: 20px;
+	font-size: 1.2em;
+}
+ 
+.tour-headline {
+	font-weight: normal;
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #ddd;
+	font-size: 1.8em;
+	color: black;
+}
+.tab_content h3 a{
+	color: #254588;
+}
+.tab_content img {
+	float: left;
+	margin: 0 20px 20px 0;
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+</style> 
+ 
+
+ 
+
+
+<script src="javascripts/tabs.js"></script>
+<div class="gs_12" style="clear:both"> 
+	<div class="gs_12 alpha appcontainer standardmargin"> 
+		<div class="grid_12 alpha omega"> 
+		 <ul class="gs_3 omega" id="tour-tab-links"> <!-- tabs  --> 
+			<h5 class="tour-tab-header">Overview </h5> 
+		        <li><a href="#tab1">Payment Experience</a></li> 
+		        <li><a href="#tab2">Collaboration</a></li> 
+		        <li><a href="#tab3">Case studies</a></li> 
+				<li><a href="#tab4">Web-based App</a></li> 
+			<h5 class="tour-tab-header">Product</h5> 
+		        <li><a href="#tab5">Accounts</a></li> 
+		        <li><a href="#tab6">Reports</a></li> 
+		        <li><a href="#tab7">Comments</a></li> 
+			<h5 class="tour-tab-header">Company</h5> 
+		        <li><a href="#tab8">About</a></li> 
+		        <li><a href="#tab9">Credit</a></li> 
+		        <li><a href="#tab10">Tools</a></li> 
+		    </ul> 
+ 
+		    <div class="gs_9 omega" id="tab-container">  <!-- tab content  --> 
+		        <div id="tab1" class="tab_content"> 
+						<h2 class="tour-headline">Power in Numbers</h2> 
+						<p>IncFlow pulse allows you to see payment experience reports regarding your accounts, as reported by other companies.  How is your customer paying?  Late to you, but on time to everyone else?  Is there an upward trend that you can use to offer better terms?  Would you like to see what your industry peers are reporting?</p> 
+						<p>Our Payment Experience Tracker is a way to continually monitor the state of your credit accounts, using information straight from your books, and from other businesses. Why buy a single report that uses generic, publicly available information that can quickly be dated and meaningless? IncFlow tracks the data you need to make informed credit decisions daily. Spotting trends in payment experience is part of risk analysis.  IncFlow Pulse can improve your risk analysis and, through cause-and-effect, your bottom line.</p> 	     
+					    <h2 class="tour-headline">Monitor your Accounts</h2> 
+			            <%= image_tag ("/images/screenshots/view_company.png"), {:width => 300}  %>
+ 
+			            <p>IncFlow Pulse is a place to record and monitor key financial data regarding your customers and suppliers. Payment trends offer the best way to recognize risk before it becomes a real problem. Enter your own data, and see summarized data from other vendors about your accounts. Our charts and reports provide you with powerful analytics that make risk management easier.</p> 
+			<br> 
+			<br> 
+			<br> 
+			<br> 
+			<br> 
+ 
+						     <h2 class="tour-headline">Upload your Payment Data</h2> 
+			            <%= image_tag ("/images/screenshots/view_company.png"), {:width => 300}  %>
+					            <p>Adding your payment reports, no matter how many, is easy. So easy, that we batch upload your payment data for you. Contact us and we'll get started.</p> 
+ 
+					            <p>After that, you can continue to upload in batches, or by item. It’s easy to view payments, edit individual payments, and add payments manually. More importantly, IncFlow Pulse has a powerful search capability that allows you to search your payment by every possible criteria.</p> 
+				</div> 
+ 
+		        <div id="tab2" class="tab_content"> 
+		            <h2 class="tour-headline">Collaborate with Industry Peers</h2> 
+			            <%= image_tag ("/images/screenshots/view_company.png"), {:width => 300}  %>
+		            <p>IncFlow offers simple, powerful new ways for enterprise collaboration.  In Pulse, you see a summary of all the payment reports for a single customer.  The data is taken from all reports on Pulse, from any company reporting on this customer.  When you see the experience this customer has had with your industry peers, you are better equipped to assess that customer.</p> 
+ 
+					<p>IncFlow Pulse features simple comments.  Similar to a blog, you can provide feedback or respond to questions in a public forum.  Increase your visibility and accountability the way you should in this new world of social media.</p> 
+ 
+					<h2 class="tour-headline">Converse with Suppliers and More</h2>  
+			            <%= image_tag ("/images/screenshots/view_company.png"), {:width => 300}  %>
+		            <p>IncFlow Pulse features a simple, convenient comment section. Take the power of social media to communicate quickly among large audiences, and apply it to your relationships with your customers and vendors. Make comments, ask questions, provide feedback-- it’s an easy way to strengthen relationships and engage your entire industry in a dialog. </p> 
+ 
+		        </div> 
+		        <div id="tab3" class="tab_content"> 
+					<h2 class="tour-headline">Trade credit</h2> 
+					<p>When you offer goods on credit, you take risks with your business.  If a company doesn't pay on time, your cash flow is hurt.  Some customers will pay on time, every time.  If you miss these healthy trends, you might miss the opportunity to land more business by offering more competitive terms.</p> 
+					<p>IncFlow Pulse is the first place you should look to see which of your accounts are paying on time, and which are paying late.  This isn't just your own data, either-- IncFlow Pulse shows you the data collected from every company reporting  
+					<h2 class="tour-headline">PreQualification</h2> 
+					<p>When you rely on a company, it means your cash flow is dependent on their performance.  IncFlow Pulse offers a highly-indicative representation of a company's ability to pay their own customers.  Use this data to inform your decision to pre-qualify a new subcontractor, or to identify top performs on your contractor list.</p> 
+					<h2 class="tour-headline">Do you like being creative?</h2> 
+					<p>IncFlow Pulse is a simple yet powerful tool.  It displays one category of data very well-- payment experiences.  What can you imagine using this data for?</p> 
+ 
+					</div> 
+		       	<div id="tab4" class="tab_content"> 
+		            <h2 class="tour-headline">Software-as-a-Service for the enterprise</h2> 
+					<p>IncFlow Pulse is a modern web app featuring best-in-class servers, platforms and security.  The cloud is an important new infrastructure layer for any business.  In the cloud, old problems like software implementation and hardware maintenance don't exist, and exciting new advantages provide solid ROI.</p> 
+					<p>IncFlow pulse is built using the following world-class cloud partners:</p> 
+					<div id="tour-saas-features">	
+							<h5>AMAZON WEB SERVICES (AWS)</h5> 
+							<ul> 
+							<li>SAS70 Type II certification</li> 
+							<li>ISO 27001 certification, completed SAS70 Type II audits</li> 
+							<li>Amazon’s own data centers used to store your data. This means firewalls, intrusion detection, backups, and more.</li> 
+							<li>Backups and redundancies ensure your data is safe from loss or corruption</li> 
+							</ul> 
+ 
+							<br> 
+ 
+							<h5>HEROKU PAAS</h5> 
+							<ul> 
+							<li>Constant security monitoring</li> 
+							<li>Systemwide security updates</li> 
+							<li>Dedicated security team</li> 
+							<li>Scheduled security audits by NSA security analysts</li> 
+							<li>PostgreSQL ensures your data is from other applications</li> 
+							<li>Heroku Dynos are write-only, with no SSH access</li> 
+							</ul> 
+							
+							<br> 
+ 
+					<h4>IncFlow Pulse offers these advantages, and more:</h4> 
+							<h5>ENCRYPTION</h5> 
+ 
+							<p>Every transmission you make with IncFlow is encrypted by 128-bit SSL, making interception virtually impossible for hackers.</p> 
+ 
+ 
+							<h5>BACKUPS AND DATA SECURITY</h5> 
+ 
+							<p>Your data is stored in our Amazon Storage account, so our backup procedures and redundancies are the industry standard. You have the convenience of worry-free backups, automatically handled by one of the world’s leading data centers.</p> 
+							<p>IncFlow data is stored in PostgreSQL, “the world’s most advanced open source database”. PostgreSQL is a leading relational database that has standards and security for enterprise level data integrity.</p> 
+ 
+ 
+							<h5>AVAILABLITY: ANYTIME, ANYWHERE</h5> 
+							<p>Would you rather handle your emergencies with your in-house staff, or have a dedicated team of professionals deal with fiascos?  Software-as-a-Service means your software is hosted, maintained and loved by companies who specialize in servers and databases.  This frees your team and your budget for other mission-critical projects.</p> 
+							<p>IncFlow offers the security of reliability. Due to our partner’s superb up-time, historically you can expect 99.9% availability.</p> 
+ 
+ 
+							<h5>PERMISSIONS BASED ACCOUNTS</h5> 
+ 
+							<p>You control who accesses your IncFlow account. You set permissions for what information is viewable publicly or by other companies and 3rd parties. No one without proper permissions can see your private information.</p> 
+							</div> 
+				        </div> 
+ 
+			 <div id="tab5" class="tab_content"> 
+					<h2 class="tour-headline">All your accounts in one place</h2> 
+			            <%= image_tag ("/images/screenshots/view_company.png"), {:width => 300}  %>
+					<p>IncFlow Pulse allows for unlimited accounts.  Companies who deal with hundreds or thousands of customers can simply upload their payment experience reports and begin to access this information in our simple, powerful web-based application.  See clear, full color charts reflecting current trends.  Search accounts by any criteria.</p> 
+					<p>Uploading is easy.  For Quickbooks users, we have a set of simple instructions to export payments experience reports.</p> 
+					<p>When your accounts are on IncFlow Pulse, something very powerful occurs:  Your data is combined with the anonymized data of your industry peers, so that you seen the payment experience your customer has with multiple vendors.  Suddenly, your information is even more powerful.</p> 
+ 
+		             </div> 
+		        <div id="tab6" class="tab_content"> 
+		            <h2 class="tour-headline">Detailed Payment Experience Reports</h2> 
+		        	<p>Detailed payment experience reports are featured on every account summary page.  These reports show not only your own data, but also data from every other company reporting on your customer.  You will see:</p> 
+					<ul id="tour-reports"> 
+						<li>Total payment submissions</li> 
+						<li>Largest invoice paid</li> 
+						<li>Smallest invoice paid</li> 
+						<li>Ratio of current to late payments</li> 
+						<li>Customizable charts showing both overview and detailed views</li> 
+		            </ul> 
+		        </div> 
+		        <div id="tab7" class="tab_content"> 
+		        	<h2 class="tour-headline">Public Comments</h2> 
+			            <%= image_tag ("/images/screenshots/view_company.png"), {:width => 300}  %>
+		            <p>IncFlow Pulse features a simple, convenient comment section. Take the power of social media to communicate quickly among large audiences, and apply it to your relationships with your customers and vendors. Make comments, ask questions, provide feedback-- it’s an easy way to strengthen relationships and engage your entire industry in a dialog. </p> 
+ 
+		        </div> 
+				<div id="tab8" class="tab_content"> 
+					<h2 class="tour-headline">IncFlow: Social Risk Management</h2> 
+					<p>IncFlow, Inc. develops cloud-based apps for the enterprise.  After experiencing firsthand the lack of affordable, valuable tools for simple tasks dealing with trade credit and prequalification, we decided to tackle the problem.  IncFlow Pulse is the first of several applications that address problems that are systemic to data sharing in the enterprise.  Currently in development, IncFlow Accounts offers a comprehensive solution for managing risk throughout all your credit and contractor accounts.</p> 
+				</div> 
+				<div id="tab9" class="tab_content"> 
+					<h2 class="tour-headline">Risk Management is More Important than Ever</h2> 
+					<p>These days, as the recession takes its toll, your business is a bank.  When you offer to sell goods on credit, you are financing your customer.  Just like a bank, you need to assess the credit worthiness of your customers.  The calculations can be complex-- a good paying customer might deserve more sales, whereas a poor performer might need more conservative terms.  IncFlow Pulse serves as the first point of reference to determine the health and credit-worthiness of a company.</p> 
+				</div> 
+				<div id="tab10" class="tab_content"> 
+					<h2 class="tour-headline">Tools for your Credit Managers</h2> 
+					<p>Credit managers deal with a comprehensive set of data regarding all facets of a company's well-being.  Information in a CRM can get you a phone number and address, but professional credit managers need to know more.  IncFlow mines your account data and presents you with key metrics necessary to make informed decisions.  IncFlow Pulse specifically targets payment experience as the key metric for determining a company's current payment trend.  IncFlow is developing more products featuring even more intensive financial analysis, drawing upon the financial reports which are fundamental to any credit application.</p> 
+					<p>IncFlow offers a brand new combination of power and simplicity for the professional credit manager.</p> 
+				</div> 
+		    </div> 
+	
+	</div> 
+	
+	
+		</div> 
+	</div> 
+    
+			</div> 
+		</div> <!--! end of #container -->
