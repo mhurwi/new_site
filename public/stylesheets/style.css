@@ -436,11 +436,12 @@ left:4px;
 
 
 /*******************************************************************************************************************************************************************
-************************************************************************** USER MODULAR COLORS STYLES **************************************************************
+************************************************************************** USER MODULAR STYLES *********************************************************************
 *******************************************************************************************************************************************************************/
 
+
 /* LINKS COLOR */
-a, a:active, a:visited ,#main_link_color,#personal_data p span,#personal_data p span a{ color:#DE5328; }
+a, a:active, a:visited ,#main_link_color,#personal_data p span,#personal_data p span a{ color:#0576ab; }
 
 /* LINKS ONHOVER COLOR */
 a:hover { color: #1e1e1e; }
@@ -450,9 +451,9 @@ a:hover { color: #1e1e1e; }
 
 /* HEADINGS STRONG COLOR & HEADING FONTS*/
 h1 strong,h2 strong,h3 strong,h4 strong,h5 strong,h6 strong,.dropcapcolor,.inner_main .widget ul.testimonials li p span,.post_header a:hover,.breadcrumbs p span,h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,.hotstuff ul li a{
-color:#DE5328;
+color:#0576ab;
 }
-blockquote, q {border-color:#DE5328;}
+blockquote, q {border-color:#0576ab;}
 .post_header a{
 text-decoration:none;
 color:#1e1e1e;
@@ -463,25 +464,30 @@ body{
 background:url(img/background.png) repeat-x scroll 0 0 #e8e9eb;
 }
 .dropcapspot{
-background-color:#DE5328;
+background-color:#0576ab;
 }
 
 /* DEFAULT BUTTON - to change the color of default button, copy the styles for one of available colors from line 1478 in this style.css */
 a.superbutton,.inner_main input.superbutton{
-color:#ffffff;
-background:url(img/superbutton.png) repeat-x center -1px transparent;
-border:1px solid #d65f34;
-box-shadow:inset 0px 1px #faaa82;
-text-shadow:1px 1px #c8542d;
+color:#7a7a7a;
+background:url(img/superbutton.png) repeat-x center -181px transparent;
+border:1px solid #cecece;
+box-shadow:inset 0px 1px 2px #ffffff;
+text-shadow:1px 1px #ffffff;
 }
 a.superbutton:hover,.inner_main input.superbutton:hover,a.superbutton.selected{
-background:url(img/superbutton.png) repeat-x center -31px transparent;
+background:url(img/superbutton.png) repeat-x center -211px transparent;
 }
 
 /* SELECTION COLOR */
-::-moz-selection{ background: #DE5328; color:#fff; text-shadow: none; }
-::selection { background:#DE5328; color:#fff; text-shadow: none; } 
-a:link { -webkit-tap-highlight-color: #DE5328; } 
+::-moz-selection{ background: #0576ab; color:#fff; text-shadow: none; }
+::selection { background:#0576ab; color:#fff; text-shadow: none; } 
+a:link { -webkit-tap-highlight-color: #0576ab; } 
+
+/*******************************************************************************************************************************************************************
+************************************************************************** USER MODULAR STYLES *********************************************************************
+*******************************************************************************************************************************************************************/
+
 
 
 /* TABS FOR FEATURES, ABOUT */
