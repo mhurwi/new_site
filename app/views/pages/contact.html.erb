@@ -9,6 +9,13 @@
 		<form method="post" action="sendEmail.php">
 			<div id="form_container" class="gs_4">		
 				<div id="form_main">
+					<p class="label_name"><label for="support_Type">What do you want to talk about?</label></p> 
+					<p class="input_form"><select id="support_support_type" name="support[support_type]"><option value="Sales Inquiry">Sales Inquiry</option> 
+					<option value="Press Inquiry">Press Inquiry</option> 
+					<option value="Idea">Idea</option> 
+					<option value="Support">Support</option> 
+					<option value="Batch Upload">Batch Upload</option></select></p> 
+					<p class="label_name"><label for="support_Details">Details</label></p>
 					<input type="text" name="name" id="name" value="Name" title="Name"/>
 					<input type="text" name="email" id="email" value="Email" title="Email"/>
 					<textarea name="comments" id="comments" rows="4" cols="4" value="Message" placeholder="Message"></textarea>

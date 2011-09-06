@@ -1,16 +1,23 @@
- <link rel="stylesheet" href="stylesheets/style.css?v=2">
-<div class="main png_bg">
-	<div class="inner_main">
-		<div class="container_omega">
-			
-			
+
+
 <% content_for :body_content_left do %>
-  <div id="show_blog_post">
+  <div class="gs_7 alpha" id="show_blog_post">
     <%= render 'post' %>
   </div>
 
+<% content_for :body_content_right do %>
+<div class="gs_4 omega sidebar widget">
+  <%= render :partial => "/blog/shared/categories" %>
+  <%= render :partial => "/blog/shared/tags" %>
+  <%= render :partial => "/blog/shared/posts" %>
+  <%= render :partial => "/blog/shared/rss_feed" %>
+  <%= blog_archive_list %>
+</div>
+<% end %>
+
   <% if BlogPost.comments_allowed? %>
-    <aside id="comments">
+	<aside id="comments">
+	<div class="gs_8">
       <h2><%= t('.comments.title') %></h2>
       <% if (comments = @blog_post.comments.approved).any? %>
         <%= render :partial => "comment", :collection => comments %>
@@ -49,39 +56,15 @@
           <%= f.submit t('.submit') %>
         </div>
       <% end %>
+	</div>
     </aside>
   <% end %>
 <% end %>
 
-<% content_for :body_content_right do %>
-  <%= render :partial => "/blog/shared/categories" %>
-  <%= render :partial => "/blog/shared/tags" %>
-  <%= render :partial => "/blog/shared/posts" %>
-  <%= render :partial => "/blog/shared/rss_feed" %>
-  <%= blog_archive_list %>
-<% end %>
+
+
+
+
+
 
 <%= render :partial => "/shared/content_page", :locals => { :remove_automatic_sections => true }  %>
-
-
-	</div>
-</div>		
-</div>
-
-<!-- /True containers (keep the content inside containers!) -->
-<div class="endmain png_bg"></div>
-<!-- /Main content alpha -->
-
-<!-- Footer styling transition (the stripe). You can remove it if you don't like it -->
-<div class="stripe png_bg"></div>
-<!-- /Footer styling transition -->
-
-
-<% content_for :stylesheets, stylesheet_link_tag('refinerycms-blog') %>
-<% content_for :before_javascript_libraries, jquery_include_tags(:jquery_ui => false) %>
-<% content_for :javascripts do %>
-  <%# enable AJAX'd post nav at your own risk until html5 history API implemented. %>
-  <%#= javascript_include_tag('refinerycms-blog') %>
-  <script src="http://w.sharethis.com/button/buttons.js"></script>
-  <script>stLight.options({publisher:'<%= BlogPost::ShareThis.key %>'});</script>
-<% end if BlogPost::ShareThis.enabled? %>
