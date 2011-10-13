@@ -496,6 +496,10 @@ a:link { -webkit-tap-highlight-color: #0576ab; }
 	color:gray;
 	padding-top:20px;
 }
+
+#tour img {
+
+}
  
 #tour-tab-links {
 	list-style: none;
@@ -557,6 +561,7 @@ a:link { -webkit-tap-highlight-color: #0576ab; }
 	font-weight: normal;
 	margin-bottom: 10px;
 	border-bottom: 1px dashed #ddd;
+	padding-top: 80px;
 	font-size: 1.8em;
 	color: black;
 }
